@@ -341,7 +341,7 @@ avg(1:10)</code></pre>
 ##     else &quot;ts&quot;
 ##     y
 ## }
-## &lt;bytecode: 0x0000000015ab2ca8&gt;
+## &lt;bytecode: 0x0000000015ac3100&gt;
 ## &lt;environment: namespace:stats&gt;</code></pre>
 <p>If we want to be absolutely sure that we use the dplyr filter, we can use</p>
 <pre class="r"><code>dplyr::filter</code></pre>
@@ -349,7 +349,7 @@ avg(1:10)</code></pre>
 ## {
 ##     UseMethod(&quot;filter&quot;)
 ## }
-## &lt;bytecode: 0x00000000138165a0&gt;
+## &lt;bytecode: 0x0000000013816a38&gt;
 ## &lt;environment: namespace:dplyr&gt;</code></pre>
 <p>Also note that if we want to use a function in a package without loading the entire package, we can use the double colon as well.</p>
 <p>For more on this more advanced topic we recommend the R packages book16.</p>
@@ -434,8 +434,9 @@ if(all(x&gt;0)){
 <ol style="list-style-type: lower-alpha">
 <li>all(x)</li>
 <li>any(x)</li>
-<li>any(ix) #d. all(ix)</li>
+<li>any(ix)</li>
 </ol>
+<p>#d. all(ix)</p>
 <ol start="3" style="list-style-type: decimal">
 <li>The function nchar tells you how many characters long a character vector is. Write a line of code that assigns to the object new_names the state abbreviation when the state name is longer than 8 characters.</li>
 </ol>
